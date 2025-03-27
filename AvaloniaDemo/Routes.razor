@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@using global::Avalonia.Controls.ApplicationLifetimes
+
+@if (global::Avalonia.Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime lifetime)
+{
+    <Window Title="AvaloniaDemo" Topmost="false" MinWidth="600" MinHeight="500">
+        <Router AppAssembly="@typeof(Routes).Assembly">
+            <Found Context="routeData">
+                <RouteView RouteData="@routeData"/>
+            </Found>
+        </Router>
+    </Window>
+}
+else
+{
+    <Router AppAssembly="@typeof(Routes).Assembly">
+        <Found Context="routeData">
+            <RouteView RouteData="@routeData"/>
+        </Found>
+    </Router>
+}
+
+
+

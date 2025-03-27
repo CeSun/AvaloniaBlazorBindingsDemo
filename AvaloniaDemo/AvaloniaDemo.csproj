@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Avalonia" Version="11.2.0" />
+	  <PackageReference Include="Avalonia.Desktop" Version="11.2.0" />
+	  <PackageReference Include="Avalonia.Themes.Fluent" Version="11.2.0" />
+	  <PackageReference Include="Avalonia.Fonts.Inter" Version="11.2.0" />
+	  <PackageReference Include="Avalonia.Diagnostics" Condition="'$(Configuration)' == 'Debug'" Version="11.2.0" />
+	  <PackageReference Include="BlazorBindingsAvalonia" Version="0.1.2" />
+	  <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+  </ItemGroup>
+</Project>

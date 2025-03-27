@@ -1,0 +1,11 @@
+﻿@page "/NewPage"
+@inject INavigation navigation
+
+<StackPanel>
+    <TextBlock>这里是NewPage</TextBlock>
+    <Button OnClick="@(async () => await navigation.NavigateToAsync("/"))">返回</Button>
+</StackPanel>
+
+@code {
+
+}

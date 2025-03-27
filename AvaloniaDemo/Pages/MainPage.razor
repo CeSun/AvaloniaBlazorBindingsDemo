@@ -1,0 +1,14 @@
+﻿@page "/"
+@inject INavigation navigation
+
+@namespace BlazorBindingsAvalonia.HelloWorld
+
+
+<StackPanel>
+    <TextBlock>这里是MainPage</TextBlock>
+    <Button OnClick="@(async () => await navigation.NavigateToAsync("/NewPage"))">跳转到NewPage</Button>
+</StackPanel>
+
+@code {
+ 
+}
